@@ -27,7 +27,7 @@ To run this project locally:
 
 Clone the repository:
 
-bash
+bash 
 Copy
 git clone https://github.com/yourusername/your-portfolio.git
 Navigate into the project folder:
