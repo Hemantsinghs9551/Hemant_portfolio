@@ -1,0 +1,23 @@
+{
+  "name": "hemant_portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio\r Welcome to my personal portfolio! This is a simple and responsive portfolio website that I built using HTML, CSS, and JavaScript to showcase my skills, projects, and background.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hemantsinghs9551/Hemant_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hemantsinghs9551/Hemant_portfolio/issues"
+  },
+  "homepage": "https://github.com/Hemantsinghs9551/Hemant_portfolio#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
