@@ -89,6 +89,8 @@ function erase() {
 }
 type(); // Start the typing effect
 
+
+
 //for educations
 async function fetchAndRenderEducation() {
     try {
@@ -244,34 +246,58 @@ document.querySelectorAll('.skills__content').forEach(card => {
 
 
 // project
-async function fetchAndRenderProjects() {
+let tempProjectsData = [];
+
+async function fetchAllProjects() {
+    const loader = document.getElementById('projects-loader');
+    loader.classList.add('show');
+    
     try {
         const response = await fetch('http://localhost:3000/api/projects');
         if (!response.ok) throw new Error('Failed to fetch projects data');
 
-        const projectsData = await response.json();
+        tempProjectsData = await response.json();
+        
+        renderProjects(tempProjectsData);
 
-        const projectsContainer = document.getElementById('projectsContainer');
-        if (!projectsContainer) throw new Error('projectsContainer not found');
-        projectsContainer.innerHTML = '';
-
-        projectsData.forEach(project => {
-            const projectItem = document.createElement('a');
-            projectItem.classList.add('work__img');
-            projectItem.href = project.github;
-            projectItem.target = '_blank';
-            projectItem.innerHTML = `<img src="${project.image}" alt="${project.name}">`;
-            projectsContainer.appendChild(projectItem);
-        });
+        // Wait a bit before hiding loader to ensure smooth transition
+        setTimeout(() => loader.classList.remove('show'), 500);
 
     } catch (error) {
         console.error('Error fetching projects:', error);
+        loader.textContent = '❌ Failed to load projects.';
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    fetchAndRenderProjects();
-});
+function renderProjects(projectsData) {
+    const projectsContainer = document.getElementById('projectsContainer');
+    if (!projectsContainer) return console.error('projectsContainer not found');
+
+    projectsContainer.innerHTML = '';
+
+    projectsData.forEach(project => {
+        const projectItem = document.createElement('a');
+        projectItem.classList.add('work__img');
+        projectItem.href = project.github;
+        projectItem.target = '_blank';
+        projectItem.innerHTML = `<img src="${project.image}" alt="${project.name}">`;
+        projectsContainer.appendChild(projectItem);
+    });
+
+    ScrollReveal().reveal('.work__img', {
+        origin: 'top',
+        distance: '20px',
+        duration: 500,
+        delay: 200,
+        interval: 100,
+        reset: false,
+    });
+
+    observeProjects();
+}
+
+document.addEventListener('DOMContentLoaded', fetchAllProjects);
+
 
 const observeProjects = () => {
     /* ==== SCROLL ANIMATION FOR PROJECTS ==== */
@@ -337,5 +363,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
 
 

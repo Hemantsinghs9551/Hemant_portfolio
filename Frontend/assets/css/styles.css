@@ -556,7 +556,7 @@ img {
   color: #fff;
   opacity: 0.75;
 }
-}
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
@@ -979,6 +979,16 @@ img {
   pointer-events: auto;
   bottom: 50px;
 }
+.loader {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+.loader.show {
+  display: block;
+}
+
 
 
 }
