@@ -1,0 +1,3 @@
+express
+cors
+xargs -n 1 npm install < requirements.txt

@@ -1,0 +1,144 @@
+{
+  "descriptions": [
+    "Software Engineer",
+    "React Developer",
+    "UI Designer"
+  ],
+  "projects": [
+    {
+      "name": "Jweva: Jewellery E-Commerce App",
+      "image": "./projectsImages/Jweva.jpeg",
+      "github": "https://github.com/Hemantsinghs9551"
+    },
+    {
+      "name": "Smart Occupancy-Based Lighting System",
+      "image": "./projectsImages/door_automation.jpeg",
+      "github": "https://github.com/Hemantsinghs9551/Smart-Occupancy-Based-Lighting-System.git"
+    },
+    {
+      "name": "College Administration System",
+      "image": "./projectsImages/college_administration.jpeg",
+      "github": "https://github.com/Hemantsinghs9551/College_administration.git"
+    },
+    {
+      "name": "Bus Reservation System",
+      "image": "./projectsImages/Bus_reservation.jpeg",
+      "github": "https://github.com/Hemantsinghs9551/bus_reservation_system.git"
+    },
+    {
+      "name": "Heart Disease Prediction",
+      "image": "./projectsImages/Heart.jpeg",
+      "github": "https://github.com/Hemantsinghs9551/heart-diesese-prediction-ML.git"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": [
+        {
+          "icon": "bxl-java",
+          "name": "Java",
+          "proficiency": "70%"
+        },
+        {
+          "icon": "bxl-c-plus-plus",
+          "name": "C++",
+          "proficiency": "80%"
+        },
+        {
+          "icon": "bxl-javascript",
+          "name": "JavaScript",
+          "proficiency": "75%"
+        },
+        {
+          "icon": "bxl-typescript",
+          "name": "TypeScript",
+          "proficiency": "65%"
+        }
+      ]
+    },
+    {
+      "category": "Frameworks & Technologies",
+      "items": [
+        {
+          "icon": "bxl-react",
+          "name": "React Native",
+          "proficiency": "85%"
+        },
+        {
+          "icon": "bxs-cloud",
+          "name": "Cloud Computing",
+          "proficiency": "60%"
+        }
+      ]
+    },
+    {
+      "category": "Operating Systems",
+      "items": [
+        {
+          "icon": "bxl-linux",
+          "name": "Linux",
+          "proficiency": "70%"
+        },
+        {
+          "icon": "bxl-windows",
+          "name": "Windows",
+          "proficiency": "75%"
+        }
+      ]
+    },
+    {
+      "category": "Tools",
+      "items": [
+        {
+          "icon": "bxl-git",
+          "name": "Git",
+          "proficiency": "75%"
+        }
+      ]
+    },
+    {
+      "category": "Soft Skills",
+      "items": [
+        {
+          "icon": "bx-group",
+          "name": "Leadership"
+        },
+        {
+          "icon": "bx-chat",
+          "name": "Communication"
+        },
+        {
+          "icon": "bx-bulb",
+          "name": "Problem Solving"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Barkatullah University",
+      "description": "I earned my B.Tech degree in Computer Science and Engineering.",
+      "marks": "CGPA - 8.10",
+      "year": "Year - 2024"
+    },
+    {
+      "title": "Govt. Higher Secondary Dabhaura",
+      "description": "I graduated from Govt. Higher Secondary Dabhaura after completing my 12th grade.",
+      "marks": "Marks - 83.80%",
+      "year": "Year - 2019"
+    },
+    {
+      "title": "Govt. Higher Secondary Dabhaura",
+      "description": "I finished my 11th grade at this school.",
+      "marks": "Marks - 65.50%",
+      "year": "Year - 2018"
+    },
+    {
+      "title": "Govt. High School Dabhaura",
+      "description": "I completed my 10th grade at this school.",
+      "marks": "Marks - 84.14%",
+      "year": "Year - 2017"
+    }
+  ]
+}
