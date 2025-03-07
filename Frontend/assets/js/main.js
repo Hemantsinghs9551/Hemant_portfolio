@@ -364,6 +364,97 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.getElementById('addEducationForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+  
+    const newEducation = {
+      title: document.getElementById('eduTitle').value,
+      description: document.getElementById('eduDescription').value,
+      marks: document.getElementById('eduMarks').value,
+      year: document.getElementById('eduYear').value,
+    };
+  
+    try {
+      const response = await fetch('http://localhost:3000/api/education', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newEducation),
+      });
+  
+      if (response.ok) {
+        alert('Education added successfully!');
+        location.reload();
+      } else {
+        alert('Failed to add education');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred while adding education.');
+    }
+  });
+
+  // Modal control
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("educationModal");
+  const openModalBtn = document.getElementById("openModalBtn");
+  const closeModal = document.querySelector(".close");
+
+  openModalBtn.addEventListener("click", () => {
+    modal.classList.add("show");
+  });
+
+  closeModal.addEventListener("click", () => {
+    modal.classList.remove("show");
+  });
+
+  // Close modal on outside click
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("show");
+    }
+  });
+});
+
+
+// Toast function
+function showToast(message, type = 'success') {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.style.backgroundColor = type === 'error' ? '#e74c3c' : '#333';
+    toast.classList.add('show');
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 3000);
+}
+
+// Form validation with toast notifications
+const addEducationForm = document.getElementById('addEducationForm');
+
+addEducationForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const title = document.getElementById('eduTitle').value.trim();
+    const description = document.getElementById('eduDescription').value.trim();
+    const marks = document.getElementById('eduMarks').value.trim();
+    const year = document.getElementById('eduYear').value.trim();
+
+    if (!title || !description || !marks || !year) {
+        showToast('⚠️ Please fill in all the fields!', 'error');
+        return;
+    }
+
+    // Simulate successful addition (replace with your logic to update the UI)
+    showToast('🎉 Education added successfully!');
+
+    // Close the modal
+    educationModal.style.display = 'none';
+
+    // Reset the form
+    addEducationForm.reset();
+});
+
 
 
 

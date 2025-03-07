@@ -8,27 +8,32 @@
     {
       "name": "Jweva: Jewellery E-Commerce App",
       "image": "./projectsImages/Jweva.jpeg",
-      "github": "https://github.com/Hemantsinghs9551"
+      "github": "https://github.com/Hemantsinghs9551",
+      "id": "e2a8128a-5d44-4c9e-b58e-c75184fe7012"
     },
     {
       "name": "Smart Occupancy-Based Lighting System",
       "image": "./projectsImages/door_automation.jpeg",
-      "github": "https://github.com/Hemantsinghs9551/Smart-Occupancy-Based-Lighting-System.git"
+      "github": "https://github.com/Hemantsinghs9551/Smart-Occupancy-Based-Lighting-System.git",
+      "id": "87b456ae-ec75-4f06-a1f6-b5a7f8d9e24b"
     },
     {
       "name": "College Administration System",
       "image": "./projectsImages/college_administration.jpeg",
-      "github": "https://github.com/Hemantsinghs9551/College_administration.git"
+      "github": "https://github.com/Hemantsinghs9551/College_administration.git",
+      "id": "0ff452ba-c90e-4143-9e52-8b8523dd63d8"
     },
     {
       "name": "Bus Reservation System",
       "image": "./projectsImages/Bus_reservation.jpeg",
-      "github": "https://github.com/Hemantsinghs9551/bus_reservation_system.git"
+      "github": "https://github.com/Hemantsinghs9551/bus_reservation_system.git",
+      "id": "7a638a8d-2ec7-414c-ab86-a2ba9ba67e29"
     },
     {
       "name": "Heart Disease Prediction",
       "image": "./projectsImages/Heart.jpeg",
-      "github": "https://github.com/Hemantsinghs9551/heart-diesese-prediction-ML.git"
+      "github": "https://github.com/Hemantsinghs9551/heart-diesese-prediction-ML.git",
+      "id": "c2e722e3-7c0f-45fa-a39a-b41e829e674f"
     }
   ],
   "skills": [
@@ -55,7 +60,8 @@
           "name": "TypeScript",
           "proficiency": "65%"
         }
-      ]
+      ],
+      "id": "c90f3a65-1f91-4223-90b0-72442986ea4e"
     },
     {
       "category": "Frameworks & Technologies",
@@ -70,7 +76,8 @@
           "name": "Cloud Computing",
           "proficiency": "60%"
         }
-      ]
+      ],
+      "id": "e51ff83b-d348-4a26-872b-494154daaf37"
     },
     {
       "category": "Operating Systems",
@@ -85,7 +92,8 @@
           "name": "Windows",
           "proficiency": "75%"
         }
-      ]
+      ],
+      "id": "ff37d324-601a-4444-a3e9-48685da30504"
     },
     {
       "category": "Tools",
@@ -95,7 +103,8 @@
           "name": "Git",
           "proficiency": "75%"
         }
-      ]
+      ],
+      "id": "6ee0e593-db87-488d-926d-d971f1913985"
     },
     {
       "category": "Soft Skills",
@@ -112,7 +121,8 @@
           "icon": "bx-bulb",
           "name": "Problem Solving"
         }
-      ]
+      ],
+      "id": "a08375b4-8587-4904-bd1b-233365dbaa59"
     }
   ],
   "education": [
@@ -120,25 +130,29 @@
       "title": "Barkatullah University",
       "description": "I earned my B.Tech degree in Computer Science and Engineering.",
       "marks": "CGPA - 8.10",
-      "year": "Year - 2024"
+      "year": "Year - 2024",
+      "id": "1124393b-402d-4817-9a43-681e7c80d72e"
     },
     {
       "title": "Govt. Higher Secondary Dabhaura",
       "description": "I graduated from Govt. Higher Secondary Dabhaura after completing my 12th grade.",
       "marks": "Marks - 83.80%",
-      "year": "Year - 2019"
+      "year": "Year - 2019",
+      "id": "91503c96-58bf-47ae-8f72-9e809e7ffa60"
     },
     {
       "title": "Govt. Higher Secondary Dabhaura",
       "description": "I finished my 11th grade at this school.",
       "marks": "Marks - 65.50%",
-      "year": "Year - 2018"
+      "year": "Year - 2018",
+      "id": "2d167814-3be4-4fed-9cc0-38a946cbc36e"
     },
     {
       "title": "Govt. High School Dabhaura",
       "description": "I completed my 10th grade at this school.",
       "marks": "Marks - 84.14%",
-      "year": "Year - 2017"
+      "year": "Year - 2017",
+      "id": "56a6160b-36b0-4a89-8e24-ffc5c4379fe6"
     }
   ]
 }
