@@ -1,10 +1,12 @@
-import express, { json } from 'express';
-import { readFileSync } from 'fs';
-import cors from 'cors'; // Import CORS
+const express = require('express');
+const { json } = require('express');
+const { readFileSync } = require('fs');
+const cors = require('cors');
+
 const app = express();
 const PORT = 3000;
 
-app.use(cors()); // ✅ Enable CORS for all routes
+app.use(cors());
 app.use(json());
 
 // Load JSON data
